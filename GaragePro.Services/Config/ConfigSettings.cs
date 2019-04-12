@@ -2,7 +2,7 @@
 {
     using System.Configuration;
 
-    public class ConfigurationSettings : IConfigurationSettings
+    public class ConfigSettings : IConfigSettings
     {
         private const string ClientIdKey = "ClientId";
         private const string ClientSecretKey = "ClientSecret";

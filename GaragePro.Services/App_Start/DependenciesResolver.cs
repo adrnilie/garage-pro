@@ -6,6 +6,7 @@ using Autofac.Integration.WebApi;
 
 namespace GaragePro.Services
 {
+    using System.Configuration;
     using Configuration;
 
     public class DependenciesResolver
@@ -27,7 +28,7 @@ namespace GaragePro.Services
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
 
             // Register you Web API controllers
-            builder.RegisterType<ConfigurationSettings>().As<IConfigurationSettings>();
+            builder.RegisterType<ConfigurationSettings>().As<IConfigSettings>();
 
             // Set the dependency to Autofac
             container = builder.Build();

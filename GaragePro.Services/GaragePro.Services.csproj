@@ -97,6 +97,8 @@
     <Compile Include="App_Start\Bootstrapper.cs" />
     <Compile Include="App_Start\DependenciesResolver.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Config\ConfigSettings.cs" />
+    <Compile Include="Config\IConfigSettings.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace GaragePro.Services.Configuration
 {
-    public interface IConfigurationSettings
+    public interface IConfigSettings
     {
         string ClientId { get; }
         string ClientSecret { get; }
